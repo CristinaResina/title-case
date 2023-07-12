@@ -28,7 +28,7 @@
         <input type="text" name="FirstName" id="FirstName" placeholder="First Name" required autofocus>
       </div>
       <div>
-        <label for="LastName">First Name</label><br>
+        <label for="LastName">Last Name</label><br>
         <input type="text" name="LastName" id="LastName" placeholder="Last Name" required>
       </div>
       <div>
@@ -36,6 +36,44 @@
         <input type="email" name="Email" id="Email" placeholder="Email" required>
       </div>
       <div>
+        <label for="Address">Address</label><br>
+        <input type="text" name="Address" id="Address" placeholder="Address" required>
+      </div>
+      <div>
+        <div>
+          <label for="City">City</label><br>
+          <input type="text" name="City" id="City" placeholder="City" required>
+        </div>
+        <div>
+          <br><label for="State">State</label><br>
+          <select name="State" id="State" required>
+            <option value="">Please select state</option>
+            <option value="AK">Alaska</option>
+            <option value="FL">Florida</option>
+            <option value="CA">California</option>
+            <option value="WA">Wahington</option>
+          </select>
+        </div>
+        <div>
+          <fieldset>
+            <br><legend>Would you like to be on our mailing list?</legend><br>
+            <label><input type="radio" name="JoinMailingList" value="Yes" required> Yes</label><br>
+            <label><input type="radio" name="JoinMailingList" value="No" required> No</label>
+          </fieldset>
+        </div>
+        <div>
+          <fieldset>
+            <br><legend>Intrstet In</legend><br>
+            <label><input type="checkbox" name="InterestedIn" value="Website" required> Website</label><br>
+            <label><input type="checkbox" name="OnlineCalendar" value="Website" required> Online Calendar</label><br>
+            <label><input type="checkbox" name="ContactForm" value="Website" required> Contact Form</label><br>
+            <label><input type="checkbox" name="Lollipops" value="Website" required> Complimentary Lollipops</label><br>
+          </fieldset>
+        </div>
+        <div>
+          <br><label for="Comments">Comments</label><br>
+          <textarea name="Comments" id="Comments" placeholder="Comments" rows="4"  cols="36"></textarea>
+        </div>
         <input type="submit">
       </div>
     </form>
