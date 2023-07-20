@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
  <head>
-     <title>Form Template</title>
+     <title>Title Case</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="css/main.css">
@@ -41,10 +41,16 @@
         <input type="submit" id="submit">
       </div>
     </form>
-    <h3>Page Origins</h3>
+    
+    <P>The "Title Case" is an application that takes a sentence input from the user
+      and converts it into title case format. <br> <br>Tile case means that the first letter of each word is capitalized,
+      while all other letters are in lowercase.<br> <br> The application achieves this by utilizing a simple algorithm
+      that iterates through each word in the input sentence and capitalizes the first letter of each word.<br>
+      <br>Overall, the Tile Case Converter is a simple yet helpful tool that quickly transforms a regular sentence
+      into an aesthetically pleasing format often used for titles, headings, and headlines in various contexts.<br></P>
     <footer>
       <p><small>&copy; 2021-<span id="this-year"></span> by 
-          YOUR NAME HERE, All Rights Reserved ~ 
+          Cristina Resina, All Rights Reserved ~ 
           <a id="html-checker" href="#" target="_blank">Check HTML</a> ~ 
           <a id="css-checker" href="#" target="_blank">Check CSS</a></small>
      </p>
@@ -52,7 +58,8 @@
   </main>
   <script src="js/main.js"></script>  
   <script>
-function titleCase(str){
+
+    function titleCase(str){
   return str=str.charAt(0).toUpperCase()+str.slice(1).toLowerCase();
 }
     const mySubmit=document.querySelector("#submit");
